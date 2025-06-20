@@ -9,53 +9,131 @@
   <meta name="author" content="Diksha Khetan" />
   <meta name="robots" content="index, follow" />
   <title>Diksha Khetan | Portfolio</title>
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="assets/logo.ico?v=1" type="image/x-icon" />
+
+  <!-- <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'>
+  <defs>
+    <linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' stop-color='#a855f7'/>
+      <stop offset='50%' stop-color='#ec4899'/>
+      <stop offset='100%' stop-color='#fef2f2'/>
+    </linearGradient>
+  </defs>
+  <circle cx='32' cy='32' r='30' fill='url(#grad)'/>
+  <text x='50%' y='54%' text-anchor='middle' font-size='24' font-weight='bold' fill='white' font-family='Segoe UI, sans-serif'>DK</text>
+</svg>" /> -->
+<style>
+
+  *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        
+}
+/* html{
+        font-size:62.5%
+} */
+/* body{
+        height:100vh;
+        display:grid;
+        place-items: center;
+        background-color:blanchedalmond;
+} */
+
+  .loader{
+        width:10rem;
+        aspect-ratio:1; 
+        background-color:hsla(287, 97%, 77%, 0.7) ;
+        border-radius:50%;
+        position: relative;
+        animation:loading 1000ms linear infinite reverse;
+
+}
+.loader::before{
+        content:"";
+        position:absolute;
+        top:0;
+        left:0;
+        width:8.57rem;
+        aspect-ratio:1;
+        border-radius:50%;
+        background-color: #f3cdff;
+        z-index:1;
+}
+.loader::after{
+        content:"";
+        position:absolute;
+        top:-1.55rem;
+        left:4.3rem;
+        width:3rem;
+        aspect-ratio:1;
+        border-radius:50%;
+        background-color: rgb(221, 141, 253);
+        box-shadow:0 0 1rem rgb(249, 141, 253),0 0 1.5rem rgb(253, 141, 160),
+        0 0 2rem rgb(253, 141, 251),0 0 2.5rem rgb(253, 141, 160),0 0 3rem rgb(253, 141, 160) ;
+        z-index:1;
+}
+@keyframes loading{
+        100%{
+                rotate:360deg;
+        }
+
+}
+</style>
 
   <!-- Font Awesome CDN (v6.5.0) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-MptN2r3CDZC8tmsm72zPzqFwUlKMdb02yT9rEfFZfwLDOB9D0aJS1CTBoYE+cBQf3UMDPmvn7w8Mn+nCTn+F8g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
-<body class="bg-gray-100  overflowX-hidden text-gray-900 leading-relaxed antialiased tracking-tight">
+<body class="bg-gradient-to-r from-purple-800 via-purple-400 to-pink-500  overflowX-hidden text-gray-900 leading-relaxed antialiased tracking-tight">
+
+
+    <!-- 🔄 Loader -->
+  <div id="loader" class="bg-[#ffcdf4]/70 fixed inset-0 z-[9999] flex items-center justify-center ">
+    <div class="loader"></div>
+  </div>
 
   <!-- Header -->
 <!-- Hamburger Toggle (visible on mobile) -->
-<header class="bg-white shadow-md sticky top-0 z-50">
-<nav class="bg-white border-gray-200 dark:bg-gray-900 px-6">
+<header class="bg-purple-800/40 backdrop-blur-sm shadow-md sticky top-0 z-50">
+<nav class=" border-gray-200 dark:bg-gray-900 px-6">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="" alt="Dk's portfolio site link" class="flex items-center space-x-3">
-        <img src="" class="h-8" alt="Dk's Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Diksha Khetan</span>
+        <img src="assets/logo.svg" class=" border border-white rounded-full h-auto w-16" alt="Dk's Logo" />
+        
     </a>
-    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
+<button id="menu-toggle"
+  class="md:hidden text-gray-700 hover:bg-white hover:text-blue-900 rounded p-1 transition duration-1 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+</button>
+
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#hero" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-        </li>
+      <ul class="font-medium text-white flex flex-col p-4 md:p-0 mt-4 rounded-lg  md:flex-row md:space-x-8  md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+  <li>
+    <a href="#hero" class="hover:text-blue-900 font-bold hover:underline underline-offset-4 transition">Home</a>
+  </li>
+  <li>
+    <a href="#about" class="hover:text-blue-900 font-bold hover:underline underline-offset-4 transition">About</a>
+  </li>
+  <li>
+    <a href="#skills" class="hover:text-blue-900 font-bold hover:underline underline-offset-4 transition">Skills</a>
+  </li>
+  <li>
+    <a href="#projects" class="hover:text-blue-900 font-bold hover:underline underline-offset-4 transition">Projects</a>
+  </li>
+  <li>
+    <a href="#contact" class="hover:text-blue-900 font-bold hover:underline underline-offset-4 transition">Contact</a>
+  </li>
       </ul>
     </div>
   </div>
@@ -68,41 +146,67 @@
 
 <!-- Sidebar -->
 <aside id="mobile-sidebar"
-  class="fixed top-0 right-0 h-full w-64 bg-white dark:bg-gray-800 shadow-lg transform translate-x-full transition-transform duration-300 z-50 md:hidden">
-  <div class="p-6">
-    <button id="close-menu" class="text-gray-600 mb-6 float-right">
-      ✕
+  class="fixed top-0 right-0 h-full w-64 bg-purple-800/10 dark:bg-gray-800 shadow-lg transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+  <div class="flex pt-7 px-2 flex-col items-center justify-between">
+    <button id="close-menu" class=" rounded-xl h-10 text-sm hover:bg-purple-200 w-full capatalize font-bold h-10 hover:text-red-600 font-bold text-white bg-purple-900  mb-2 mt-3/13  float-right">
+      Close
     </button>
-    <ul class="space-y-4 mt-10 font-medium">
-      <li><a href="#hero" class="text-blue-600 hover:text-blue-800">Home</a></li>
-      <li><a href="#about" class="text-gray-700 hover:text-blue-600">About</a></li>
-      <li><a href="#skills" class="text-gray-700 hover:text-blue-600">Skills</a></li>
-      <li><a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a></li>
-      <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
-    </ul>
+     <button class="uppercase w-full mt-4 text-md  text-shadow rounded-lg bg-pink-600  px-2 py-1 font-semibold text-white space-x-2" style="text-shadow: -1px 1px 4px rgba(255, 255, 255, 0.5)"> MENU</button>
+<ul class="space-y-6 mt-6 font-semibold text-white hover: font-bold text-center flex flex-col justify-center items-center">
+ 
+  <li>
+    <a href="#hero" class="hover:text-pink-500 hover:shadow-lg hover:bg-white/90 hover:rounded-md px-6 py-2 font-bold hover:underline underline-offset-4 transition">Home</a>
+  </li>
+  <li>
+    <a href="#about" class="hover:text-pink-500 hover:shadow-lg hover:bg-white/90 hover:rounded-md px-6 py-2 font-bold hover:underline underline-offset-4 transition">About</a>
+  </li>
+  <li>
+    <a href="#skills" class="hover:text-pink-500 hover:shadow-lg hover:bg-white/90 hover:rounded-md px-6 py-2 font-bold hover:underline underline-offset-4 transition">Skills</a>
+  </li>
+  <li>
+    <a href="#projects" class="hover:text-pink-500 hover:shadow-lg hover:bg-white/90 hover:rounded-md px-6 py-2 font-bold hover:underline underline-offset-4 transition">Projects</a>
+  </li>
+  <li>
+    <a href="#contact" class="hover:text-pink-500 hover:shadow-lg hover:bg-white/90 hover:rounded-md px-6 py-2 font-bold hover:underline underline-offset-4 transition">Contact</a>
+  </li>
+</ul>
+
   </div>
 </aside>
 
+    <!-- 🔄 Loader -->
+  <!-- <div id="loader2" class="bg-[#ffcdf4] fixed inset-0 z-[100000] flex items-center justify-center ">
+    <div class="loader"></div>
+  </div> -->
 
-
-<main class="space-y-24 max-w-screen ">
+<main class="max-w-screen">
 
   <!-- Hero Section -->
-  <section id="hero" class="min-h-screen w-100vw flex flex-col md:flex-row justify-center items-center gap-12 py-20 text-center md:text-left bg-white dark:bg-gray-100">
+  <section id="hero" data-aos="fade-up" class="min-h-screen w-100vw flex flex-col md:flex-row justify-center items-center gap-14 md:gap-6 py-20 text-center md:text-left bg-gradient-to-r from-purple-800 via-purple-400 to-pink-500 dark:bg-gray-100">
 
     <!-- Profile Image -->
-    <div class="w-full flex justify-center relative">
-      <img class="absolute rounded-full animate-[spin_12s_linear_infinite] shadow-2xl shadow-rose-600 max-w-[60%] md:max-w-[70%]" 
-           src="https://techakim.com/sam/tg/7268/li/imgs/profile.jpg" alt="My Image" />
-      <img class="relative z-10 rounded-full outline outline-[0.7rem] outline-offset-[0.1rem] outline-rose-400/30 max-w-[60%] md:max-w-[70%]" 
-           src="https://techakim.com/sam/tg/7268/li/imgs/profile.jpg" alt="My Image" />
-    </div>
+<div class="w-full h-full flex justify-center relative ">
+  <!-- Spinning background -->
+  <img
+    class="absolute rounded-full animate-[spin_12s_linear_infinite] shadow-2xl shadow-rose-600 max-w-[60%] md:max-w-[60%] object-cover"
+    src="https://techakim.com/sam/tg/7268/li/imgs/profile.jpg"
+    alt="Spinning Glow"
+  />
+
+  <!-- Static front image with outline -->
+  <img
+    class="relative z-10 rounded-full max-w-[60%] md:max-w-[60%] outline outline-[1rem] outline-offset-[0.1rem] outline-rose-400/30  object-cover object-center shadow-lg shadow-rose-600"
+    src="assets/DikshaKhetan.png"
+    alt="Profile Image"
+  />
+</div>
+
 
     <!-- Text Content -->
-    <div class="w-full flex flex-col justify-center gap-4 text-blue-600 dark:text-gray-800">
-      <h1 class="text-3xl md:text-4xl font-semibold font-serif">Hello, My name is Diksha Khetan</h1>
-      <h3 class="text-xl text-rose-400 capitalize">I'm a <span class="typing text-green-500 dark:text-green-700">MERN Stack Developer</span></h3>
-      <p class="text-gray-700 p-4 md:p-0">
+    <div data-aos="fade-up" class="w-full mt-[-1rem] flex flex-col justify-center gap-4 text-blue-900 dark:text-gray-800">
+      <h1 class="text-sm md:text-sm font-semibold font-serif text-black">Hey there, My name is <br/><br/> <span class="text-4xl text-white text-shadow " style="text-shadow: -1px 1px 2px rgb(235, 241, 255)">Diksha Khetan</span></h1>
+      <h3 class="text-xl space-x-2 text-rose-700 italic ">I'm a <span class="typing text-shadow font-semibold text-blue-900 dark:text-blue-700" style="text-shadow: 1px 1px 4px rgba(222, 237, 255, 0.994)">MERN Stack Developer</span></h3>
+      <p class="text-blue-100 p-4 md:p-0">
         Passionate full-stack developer building scalable, modern web apps. Skilled in React, Node.js, Tailwind CSS, and solving real-world problems.
       </p>
       <div class="mt-4">
@@ -114,83 +218,72 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="min-h-screen flex justify-center items-center bg-gray-100 py-6 px-4">
-    <div class="w-full max-w-lg bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl hover:-translate-y-1">
+<section id="about" data-aos="fade-up" class="min-h-screen w-full flex justify-center items-center bg-white px-10 py-4 pt-20 flex flex-col w-full max-w-screen">
+  <!-- <div class="bg-white rounded-md shadow-lg transition duration-300 hover:shadow-2xl hover:-translate-y-1 w-full max-w-screen"> -->
 
-      <!-- Banner + Profile -->
-      <div class="h-24 bg-gradient-to-r from-purple-500 to-pink-500 relative">
-        <div class="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
-          <div class="h-24 w-24 rounded-full border-4 border-white overflow-hidden shadow-md">
-            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=880&q=80" alt="Profile" class="h-full w-full object-cover" />
-          </div>
+    <!-- Banner + Profile -->
+    <div class="h-32 w-full rounded-md bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 relative">
+      <div class="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
+        <div class="h-24 w-24 rounded-full border-4 border-white overflow-hidden shadow-md">
+          <img src="assets/logoSite.svg" alt="Profile" class="h-full w-full object-cover" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="pt-16 px-6 pb-8 text-center">
+      <h2 class="text-2xl font-bold text-gray-800">Diksha Khetan</h2>
+      <p class="text-purple-600 font-medium">MERN Stack Developer & UI Enthusiast</p>
+
+      <!-- Stats -->
+      <div class="flex justify-center gap-6 my-4">
+        <div>
+          <p class="text-gray-600 text-sm">Followers</p>
+          <p class="font-bold text-gray-800">1.2K</p>
+        </div>
+        <div>
+          <p class="text-gray-600 text-sm">Projects</p>
+          <p class="font-bold text-gray-800">47</p>
+        </div>
+        <div>
+          <p class="text-gray-600 text-sm">Rating</p>
+          <p class="font-bold text-gray-800">4.9★</p>
         </div>
       </div>
 
-      <!-- Content -->
-      <div class="pt-16 px-6 pb-8 text-center">
-        <h2 class="text-2xl font-bold text-gray-800">Diksha Khetan</h2>
-        <p class="text-purple-600 font-medium">MERN Stack Developer & UI Enthusiast</p>
+      <p class="text-gray-600 text-sm mb-4">
+        Developer crafting beautiful, scalable apps. Passionate about clean code, creativity, and user-first design.
+      </p>
 
-        <!-- Stats -->
-        <div class="flex justify-center gap-6 my-4">
-          <div>
-            <p class="text-gray-600 text-sm">Followers</p>
-            <p class="font-bold text-gray-800">1.2K</p>
-          </div>
-          <div>
-            <p class="text-gray-600 text-sm">Projects</p>
-            <p class="font-bold text-gray-800">47</p>
-          </div>
-          <div>
-            <p class="text-gray-600 text-sm">Rating</p>
-            <p class="font-bold text-gray-800">4.9★</p>
-          </div>
-        </div>
+      <!-- Skills -->
+      <div class="flex flex-wrap justify-center gap-2 my-4">
+        <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">Tailwind CSS</span>
+        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">React</span>
+        <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Node.js</span>
+        <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">JavaScript</span>
+      </div>
 
-        <p class="text-gray-600 text-sm mb-4">
-          Developer crafting beautiful, scalable apps. Passionate about clean code, creativity, and user-first design.
-        </p>
+      <!-- Buttons -->
+      <div class="flex justify-center gap-4 mt-6">
+        <button class="px-6 py-2 bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 text-white rounded-lg font-medium hover:opacity-90 transition">
+          Follow
+        </button>
+        <button class="px-6 py-2 border border-purple-600 text-purple-600 rounded-lg font-medium hover:bg-purple-50 transition">
+          Message
+        </button>
+      </div>
 
-        <!-- Skills -->
-        <div class="flex flex-wrap justify-center gap-2 my-4">
-          <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">Tailwind CSS</span>
-          <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">React</span>
-          <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Node.js</span>
-          <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">JavaScript</span>
-        </div>
 
-        <!-- Buttons -->
-        <div class="flex justify-center gap-4 mt-6">
-          <button class="px-6 py-2 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 focus:ring-2 focus:ring-purple-500">
-            Follow
-          </button>
-          <button class="px-6 py-2 border border-purple-600 text-purple-600 rounded-lg font-medium hover:bg-purple-50 focus:ring-2 focus:ring-purple-500">
-            Message
-          </button>
-        </div>
-
-        <!-- Social Links -->
-<div class="flex justify-center gap-4 mt-6 text-gray-500 text-xl text-blue-600">
-  <a href="#" aria-label="Twitter" class="hover:text-purple-600">
-    <i class="fab fa-twitter"></i>
-  </a>
-  <a href="#" aria-label="GitHub" class="hover:text-purple-600">
-    <i class="fab fa-github"></i>
-  </a>
-  <a href="#" aria-label="LinkedIn" class="hover:text-purple-600">
-    <i class="fab fa-linkedin-in"></i>
-  </a>
-  <a href="#" aria-label="Dribbble" class="hover:text-purple-600">
-    <i class="fab fa-dribbble"></i>
-  </a>
-</div>
     </div>
 
-  </section>
+  <!-- </div> -->
+</section>
+
 
   <!-- Skills Section -->
-  <section id="skills" class="py-20 bg-gray-50">
-    <div class="max-w-4xl mx-auto text-center">
+
+  <section id="skills" data-aos="fade-up" class="py-20  px-10 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500">
+    <div data-aos="zoom-in" class="max-w-4xl mx-auto text-center">
       <h2 class="text-3xl font-semibold mb-10">My Tech Stack</h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
         <div class="bg-white p-4 shadow rounded">HTML5</div>
@@ -206,7 +299,7 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="py-20">
+  <section id="projects" data-aos="fade-up" class="py-20 bg-white">
     <div class="max-w-5xl mx-auto px-4 text-center">
       <h2 class="text-3xl font-semibold mb-10">Featured Projects</h2>
       <p class="text-gray-600">Showcasing some of my best work. Coming soon...</p>
@@ -214,10 +307,10 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-blue-50">
-    <div class="max-w-2xl mx-auto text-center px-4">
+  <section id="contact" data-aos="fade-up" class=" py-8 bg-gradient-to-r from-purple-800 via-purple-400 to-pink-500">
+    <div class="max-w-2xl mx-auto text-center h-full ">
       <h2 class="text-3xl font-semibold mb-6">Let’s Connect</h2>
-      <p class="mb-6 text-gray-600">Open for collaborations, internships, and developer roles. Feel free to say hello!</p>
+      <p class="mb-6 text-white">Open for collaborations, internships, and developer roles. Feel free to say hello!</p>
       <a href="mailto:your@email.com" class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700 transition">Email Me</a>
     </div>
   </section>
@@ -226,8 +319,47 @@
 
 
   <!-- Footer -->
-  <footer class="text-center py-6 text-sm text-white border-t mt-10 bg-black">
-    © 2025 Diksha Khetan · All rights reserved.
+  <footer class=" border-t-[4rem] md:flex md:flex-row md:items-center p-4 md:justify-between  text-center py-6 text-sm text-white bg-gradient-to-r from-purple-800/20 via-purple-400/40 to-pink-400/10 backdrop-blur-md font-semibold"> 
+    <div>
+      <p>Follow me on social media</p>
+
+          <!-- Social Links -->
+      <div data-aos="zoom-in" class="flex justify-center text-xl gap-4 mb-1 py-2 text-gray-700 dark:text-gray-200">
+        
+         
+        <a href="#" aria-label="Twitter" class="hover:text-pink-500"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="GitHub" class="hover:text-rose-500"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn" class="hover:text-pink-500"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Dribbble" class="hover:text-rose-500"><i class="fab fa-dribbble"></i></a>
+      </div>
+    </div>
+    
+    <div class=" hidden md:block md:flex md:flex-col md:items-center md:justify-center md:gap-2">
+          <!-- <p class="text-white hidden md:block text-center text-white-800 text-shadow font-semibold" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.606)"> Links </p> -->
+          
+          <ul class="hidden md:block md:flex md:flex-row justify-center mt-1 mb-1 gap-4 font-medium text-white items-center md:p-0  rounded-lg  md:flex-row md:space-x-8  md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+  
+           
+            <li>
+    <a href="#hero" class="hover:text-blue-900 font-bold hover:underline underline-offset-4 transition">Home</a>
+  </li>
+  <li>
+    <a href="#about" class="hover:text-blue-900 font-bold hover:underline underline-offset-4 transition">About</a>
+  </li>
+  <li>
+    <a href="#skills" class="hover:text-blue-900 font-bold hover:underline underline-offset-4 transition">Skills</a>
+  </li>
+  <li>
+    <a href="#projects" class="hover:text-blue-900 font-bold hover:underline underline-offset-4 transition">Projects</a>
+  </li>
+  <li>
+    <a href="#contact" class="hover:text-blue-900 font-bold hover:underline underline-offset-4 transition">Contact</a>
+  </li>
+      </ul>
+    </div>
+
+
+    <p>© 2025 Diksha Khetan · All rights reserved</p>
   </footer>
 
 <script>
@@ -261,10 +393,45 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 <script>
   var typed = new Typed('.typing', {
-    strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],
+    strings: ['','Web Enthusiast', 'Lifelong Learner','Digital Content Creator','Sketch Artist','Blogger','Co-author', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
+  });
+</script>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 3000,  // animation duration in ms
+    once: false       // animation should happen only once - while scrolling down
+  });
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    const body = document.body;
+
+    loader.classList.add("opacity-0", "pointer-events-none");
+    setTimeout(() => {
+      // loader.remove();             // Optional: remove it completely
+      body.classList.remove("opacity-0");
+    }, 60000); // wait for fade out
+  });
+</script>
+
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader2");
+    const body = document.body;
+
+    loader.classList.add("opacity-0", "pointer-events-none");
+    setTimeout(() => {
+      loader.remove();             // Optional: remove it completely
+      body.classList.remove("opacity-0");
+    }, 1200000); // wait for fade out
   });
 </script>
 
