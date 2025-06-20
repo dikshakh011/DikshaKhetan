@@ -101,7 +101,7 @@ A passionate MERN Stack Developer and Computer Science undergraduate from India.
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=dikshakh011&show_icons=true&theme=radical" />
+  <img src="https://github-readme-stats.vercel.app/api?username=dikshakh011&repo=DikshaKhetan&show_icons=true&theme=radical" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dikshakh011&theme=radical" />
 </p>
 
