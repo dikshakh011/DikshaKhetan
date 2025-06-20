@@ -10,8 +10,8 @@
   <a href="https://www.linkedin.com/in/diksha-khetan-0a33b4227">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&labelColor=blue" />
   </a>
-  <a href="https://github.com/dikshakh011/DikshaKhetan/stargazers">
-    <img src="https://img.shields.io/github/stars/dikshakh011/skills-portfolio" alt="Stars Badge"/>
+  <a href="[https://github.com/dikshakh011/DikshaKhetan/stargazers]">
+    <img src="https://img.shields.io/github/stars/dikshakh011/DikshaKhetan" alt="Stars Badge"/>
   </a>
 </p>
 
