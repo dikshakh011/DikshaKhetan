@@ -10,17 +10,18 @@
   <meta name="robots" content="index, follow" />
   <title>Diksha Khetan | Portfolio</title>
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-  
-  <!-- Free Font Awesome v5 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dYFehrIGzL+us+5jxuAGDw3pZlLTC2YcK4zqrcmQcKXlm7Yec2bN0UBbLgz+/e8nYBiqF7Cw0q0CBOiS4q/1lQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font Awesome CDN (v6.5.0) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-MptN2r3CDZC8tmsm72zPzqFwUlKMdb02yT9rEfFZfwLDOB9D0aJS1CTBoYE+cBQf3UMDPmvn7w8Mn+nCTn+F8g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-<!-- Font Awesome CDN -->
-<script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script>
-
-
-
 </head>
 <body class="bg-gray-100  overflowX-hidden text-gray-900 leading-relaxed antialiased tracking-tight">
 
@@ -113,7 +114,7 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="min-h-screen flex justify-center items-center bg-gray-100 py-2 px-4">
+  <section id="about" class="min-h-screen flex justify-center items-center bg-gray-100 py-6 px-4">
     <div class="w-full max-w-lg bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl hover:-translate-y-1">
 
       <!-- Banner + Profile -->
@@ -169,14 +170,22 @@
         </div>
 
         <!-- Social Links -->
-        <div class="flex justify-center gap-4 mt-6 text-gray-500 text-xl text-blue-600"> ">
-          <a href="#" aria-label="Twitter" class="hover:text-purple-600"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="GitHub" class="hover:text-purple-600"><i class="fab fa-github"></i></a>
-          <a href="#" aria-label="LinkedIn" class="hover:text-purple-600"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Dribbble" class="hover:text-purple-600"><i class="fab fa-dribbble"></i></a>
-        </div>
-      </div>
+<div class="flex justify-center gap-4 mt-6 text-gray-500 text-xl text-blue-600">
+  <a href="#" aria-label="Twitter" class="hover:text-purple-600">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="#" aria-label="GitHub" class="hover:text-purple-600">
+    <i class="fab fa-github"></i>
+  </a>
+  <a href="#" aria-label="LinkedIn" class="hover:text-purple-600">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+  <a href="#" aria-label="Dribbble" class="hover:text-purple-600">
+    <i class="fab fa-dribbble"></i>
+  </a>
+</div>
     </div>
+
   </section>
 
   <!-- Skills Section -->
@@ -248,21 +257,19 @@
   });
 </script>
 
+<!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 <script>
-    var typed = new Typed('.typing', {
+  var typed = new Typed('.typing', {
     strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],
     typeSpeed: 100,
-    BackSpeed: 60,
+    backSpeed: 60,
     loop: true
-})
-</script> 
-
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-<!-- Font Awesome CDN -->
-<script src="https://kit.fontawesome.com/your_kit_id.js" crossorigin="anonymous"></script>
+  });
+</script>
 
 </body>
 </html>
+
+
 
