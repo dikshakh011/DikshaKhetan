@@ -99,7 +99,28 @@ A passionate MERN Stack Developer and Computer Science undergraduate from India.
 💬 Fun Fact: I speak JavaScript as fluently as Hindi and English 😅
 
 ## 📈 GitHub Stats
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=dikshakh011&show_icons=true&theme=radical" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=dikshakh011&theme=radical" /> </p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=dikshakh011&show_icons=true&theme=radical" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dikshakh011&theme=radical" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dikshakh011&layout=compact&theme=radical" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=dikshakh011&theme=radical&margin-w=15&no-frame=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=dikshakh011&theme=radical" />
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=dikshakh011&label=Profile%20views&color=blueviolet&style=flat" alt="Profile Views" />
+</p>
+
 
 ## 🧑‍💻 Contributing
 This is a personal portfolio, but you are welcome to fork it or suggest improvements.
