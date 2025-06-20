@@ -62,7 +62,7 @@ Designed with a minimalist UI using **Tailwind CSS**, this portfolio is built fo
 
 ```bash
 📂 /assets/images/preview.png
-
+```
 ---
 
 ## 🛠️ Local Setup Instructions
@@ -81,8 +81,9 @@ npm install
 npx tailwindcss -i ./styles/tailwind.css -o ./dist/output.css --watch
 
 # Step 4: Open index.html in your browser
+```
 
-**##🙋‍♀️ About Me**
+## 🙋‍♀️ About Me
 A passionate MERN Stack Developer and Computer Science undergraduate from India. I specialize in crafting scalable, clean, and maintainable code for real-world applications.
 
 💼 Looking for: Collaborations, Internships & Developer Roles
@@ -97,10 +98,10 @@ A passionate MERN Stack Developer and Computer Science undergraduate from India.
 
 💬 Fun Fact: I speak JavaScript as fluently as Hindi and English 😅
 
-##**📈 GitHub Stats**
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=khetandiksha11d&show_icons=true&theme=radical" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=khetandiksha11d&theme=radical" /> </p>
+## 📈 GitHub Stats
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=dikshakh011&show_icons=true&theme=radical" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=dikshakh011&theme=radical" /> </p>
 
-🧑‍💻 Contributing
+## 🧑‍💻 Contributing
 This is a personal portfolio, but you are welcome to fork it or suggest improvements.
 
 Fork the repository
@@ -113,14 +114,14 @@ Push to the branch: git push origin feature-name
 
 Open a Pull Request
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License — you're free to use, modify, and distribute it with attribution.
 
-🔗 Contact With Me
+## 🔗 Contact With Me
 💼 LinkedIn
 
 📸 Instagram
 
 📬 Email: [Add your email here if you wish]
 
-<p align="center"><strong>Designed & Developed with ❤️ by Diksha Khetan</strong></p> ```
+<p align="center"><strong>Designed & Developed with ❤️ by Diksha Khetan</strong></p> 
