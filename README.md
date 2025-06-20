@@ -62,3 +62,65 @@ Designed with a minimalist UI using **Tailwind CSS**, this portfolio is built fo
 
 ```bash
 📂 /assets/images/preview.png
+
+---
+
+## 🛠️ Local Setup Instructions
+
+To run the project locally, follow these steps:
+
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/khetandiksha11d/skills-portfolio.git
+
+# Step 2: Navigate into the project folder
+cd skills-portfolio
+
+# Step 3: (If Tailwind is not precompiled)
+npm install
+npx tailwindcss -i ./styles/tailwind.css -o ./dist/output.css --watch
+
+# Step 4: Open index.html in your browser
+
+**##🙋‍♀️ About Me**
+A passionate MERN Stack Developer and Computer Science undergraduate from India. I specialize in crafting scalable, clean, and maintainable code for real-world applications.
+
+💼 Looking for: Collaborations, Internships & Developer Roles
+
+💡 Areas of Interest: Web Development, Software Engineering, Problem Solving
+
+✍️ Co-Author of Unsune Alfaz & Screenshot of a Past Life
+
+🔤 Languages I code in: JavaScript, Java, Python, SQL, HTML/CSS
+
+📚 Skilled in: Data Structures & Algorithms, OOP, SOLID Principles
+
+💬 Fun Fact: I speak JavaScript as fluently as Hindi and English 😅
+
+##**📈 GitHub Stats**
+<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=khetandiksha11d&show_icons=true&theme=radical" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=khetandiksha11d&theme=radical" /> </p>
+
+🧑‍💻 Contributing
+This is a personal portfolio, but you are welcome to fork it or suggest improvements.
+
+Fork the repository
+
+Create your feature branch: git checkout -b feature-name
+
+Commit your changes: git commit -m 'Add feature'
+
+Push to the branch: git push origin feature-name
+
+Open a Pull Request
+
+📄 License
+This project is licensed under the MIT License — you're free to use, modify, and distribute it with attribution.
+
+🔗 Contact With Me
+💼 LinkedIn
+
+📸 Instagram
+
+📬 Email: [Add your email here if you wish]
+
+<p align="center"><strong>Designed & Developed with ❤️ by Diksha Khetan</strong></p> ```
