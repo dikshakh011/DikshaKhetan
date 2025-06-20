@@ -5,13 +5,13 @@
 
 <p align="center">
   <a href="https://github.com/dikshakh011">
-    <img src="https://img.shields.io/github/followers/khetandiksha11d?label=Follow&style=social" alt="GitHub Badge" />
+    <img src="https://img.shields.io/github/followers/dikshakh011?label=Follow&style=social" alt="GitHub Badge" />
   </a>
   <a href="https://www.linkedin.com/in/diksha-khetan-0a33b4227">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin&labelColor=blue" />
   </a>
   <a href="https://github.com/dikshakh011/DikshaKhetan/stargazers">
-    <img src="https://img.shields.io/github/stars/khetandiksha11d/skills-portfolio" alt="Stars Badge"/>
+    <img src="https://img.shields.io/github/stars/dikshakh011/skills-portfolio" alt="Stars Badge"/>
   </a>
 </p>
 
