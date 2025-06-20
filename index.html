@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Diksha Khetan's professional developer portfolio." />
+  <meta name="author" content="Diksha Khetan" />
+  <meta name="robots" content="index, follow" />
+  <title>Diksha Khetan | Portfolio</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+</head>
+<body class="bg-gray-100  overflowX-hidden text-gray-900 leading-relaxed antialiased tracking-tight">
+
+  <!-- Header -->
+<!-- Hamburger Toggle (visible on mobile) -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+<nav class="bg-white border-gray-200 dark:bg-gray-900 px-6">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="" alt="Dk's portfolio site link" class="flex items-center space-x-3">
+        <img src="" class="h-8" alt="Dk's Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Diksha Khetan</span>
+    </a>
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#hero" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  </nav>
+</header>
+
+<!-- Overlay -->
+<div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden md:hidden"></div>
+
+<!-- Sidebar -->
+<aside id="mobile-sidebar"
+  class="fixed top-0 right-0 h-full w-64 bg-white dark:bg-gray-800 shadow-lg transform translate-x-full transition-transform duration-300 z-50 md:hidden">
+  <div class="p-6">
+    <button id="close-menu" class="text-gray-600 mb-6 float-right">
+      ✕
+    </button>
+    <ul class="space-y-4 mt-10 font-medium">
+      <li><a href="#hero" class="text-blue-600 hover:text-blue-800">Home</a></li>
+      <li><a href="#about" class="text-gray-700 hover:text-blue-600">About</a></li>
+      <li><a href="#skills" class="text-gray-700 hover:text-blue-600">Skills</a></li>
+      <li><a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a></li>
+      <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+    </ul>
+  </div>
+</aside>
+
+
+
+<main class="space-y-24 max-w-screen ">
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen w-100vw flex flex-col md:flex-row justify-center items-center gap-12 py-20 text-center md:text-left bg-white dark:bg-gray-100">
+
+    <!-- Profile Image -->
+    <div class="w-full flex justify-center relative">
+      <img class="absolute rounded-full animate-[spin_12s_linear_infinite] shadow-2xl shadow-rose-600 max-w-[60%] md:max-w-[70%]" 
+           src="https://techakim.com/sam/tg/7268/li/imgs/profile.jpg" alt="My Image" />
+      <img class="relative z-10 rounded-full outline outline-[0.7rem] outline-offset-[0.1rem] outline-rose-400/30 max-w-[60%] md:max-w-[70%]" 
+           src="https://techakim.com/sam/tg/7268/li/imgs/profile.jpg" alt="My Image" />
+    </div>
+
+    <!-- Text Content -->
+    <div class="w-full flex flex-col justify-center gap-4 text-blue-600 dark:text-gray-800">
+      <h1 class="text-3xl md:text-4xl font-semibold font-serif">Hello, My name is Diksha Khetan</h1>
+      <h3 class="text-xl text-rose-400 capitalize">I'm a <span class="typing text-green-500 dark:text-green-700">MERN Stack Developer</span></h3>
+      <p class="text-gray-700 p-4 md:p-0">
+        Passionate full-stack developer building scalable, modern web apps. Skilled in React, Node.js, Tailwind CSS, and solving real-world problems.
+      </p>
+      <div class="mt-4">
+        <a href="#contact">
+          <button class="px-6 py-2 bg-rose-500 text-white rounded shadow hover:bg-rose-600 transition">Get In Touch</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="min-h-screen flex justify-center items-center bg-gray-100 py-2 px-4">
+    <div class="w-full max-w-lg bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl hover:-translate-y-1">
+
+      <!-- Banner + Profile -->
+      <div class="h-24 bg-gradient-to-r from-purple-500 to-pink-500 relative">
+        <div class="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
+          <div class="h-24 w-24 rounded-full border-4 border-white overflow-hidden shadow-md">
+            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&w=880&q=80" alt="Profile" class="h-full w-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="pt-16 px-6 pb-8 text-center">
+        <h2 class="text-2xl font-bold text-gray-800">Diksha Khetan</h2>
+        <p class="text-purple-600 font-medium">MERN Stack Developer & UI Enthusiast</p>
+
+        <!-- Stats -->
+        <div class="flex justify-center gap-6 my-4">
+          <div>
+            <p class="text-gray-600 text-sm">Followers</p>
+            <p class="font-bold text-gray-800">1.2K</p>
+          </div>
+          <div>
+            <p class="text-gray-600 text-sm">Projects</p>
+            <p class="font-bold text-gray-800">47</p>
+          </div>
+          <div>
+            <p class="text-gray-600 text-sm">Rating</p>
+            <p class="font-bold text-gray-800">4.9★</p>
+          </div>
+        </div>
+
+        <p class="text-gray-600 text-sm mb-4">
+          Developer crafting beautiful, scalable apps. Passionate about clean code, creativity, and user-first design.
+        </p>
+
+        <!-- Skills -->
+        <div class="flex flex-wrap justify-center gap-2 my-4">
+          <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">Tailwind CSS</span>
+          <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">React</span>
+          <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Node.js</span>
+          <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">JavaScript</span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-center gap-4 mt-6">
+          <button class="px-6 py-2 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 focus:ring-2 focus:ring-purple-500">
+            Follow
+          </button>
+          <button class="px-6 py-2 border border-purple-600 text-purple-600 rounded-lg font-medium hover:bg-purple-50 focus:ring-2 focus:ring-purple-500">
+            Message
+          </button>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex justify-center gap-4 mt-6 text-gray-500 text-xl">
+          <a href="#" aria-label="Twitter" class="hover:text-purple-600"><i class="fab fa-twitter text-md"></i></a>
+          <a href="#" aria-label="GitHub" class="hover:text-purple-600"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn" class="hover:text-purple-600"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Dribbble" class="hover:text-purple-600"><i class="fab fa-dribbble"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-10">My Tech Stack</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white p-4 shadow rounded">HTML5</div>
+        <div class="bg-white p-4 shadow rounded">CSS3</div>
+        <div class="bg-white p-4 shadow rounded">Tailwind CSS</div>
+        <div class="bg-white p-4 shadow rounded">JavaScript</div>
+        <div class="bg-white p-4 shadow rounded">React</div>
+        <div class="bg-white p-4 shadow rounded">Node.js</div>
+        <div class="bg-white p-4 shadow rounded">MongoDB</div>
+        <div class="bg-white p-4 shadow rounded">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-semibold mb-10">Featured Projects</h2>
+      <p class="text-gray-600">Showcasing some of my best work. Coming soon...</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-blue-50">
+    <div class="max-w-2xl mx-auto text-center px-4">
+      <h2 class="text-3xl font-semibold mb-6">Let’s Connect</h2>
+      <p class="mb-6 text-gray-600">Open for collaborations, internships, and developer roles. Feel free to say hello!</p>
+      <a href="mailto:your@email.com" class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700 transition">Email Me</a>
+    </div>
+  </section>
+
+</main>
+
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-white border-t mt-10 bg-black">
+    © 2025 Diksha Khetan · All rights reserved.
+  </footer>
+
+<script>
+  const sidebar = document.getElementById('mobile-sidebar');
+  const overlay = document.getElementById('overlay');
+  const toggleBtn = document.getElementById('menu-toggle');
+  const closeBtn = document.getElementById('close-menu');
+
+  // Open sidebar
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.remove('translate-x-full');
+    overlay.classList.remove('hidden');
+  });
+
+  // Close sidebar
+  const closeSidebar = () => {
+    sidebar.classList.add('translate-x-full');
+    overlay.classList.add('hidden');
+  };
+
+  closeBtn.addEventListener('click', closeSidebar);
+  overlay.addEventListener('click', closeSidebar);
+
+  // Auto close on window resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) closeSidebar();
+  });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script>
+    var typed = new Typed('.typing', {
+    strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Mobile Apps Developer.'],
+    typeSpeed: 100,
+    BackSpeed: 60,
+    loop: true
+})
+</script>
+
+</body>
+</html>
+
