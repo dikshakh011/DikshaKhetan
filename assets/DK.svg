@@ -1,0 +1,52 @@
+<svg width="500" height="500" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="5%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#9932CC" />
+      <stop offset="100%" stop-color="#e0b0ff" />
+    </radialGradient>
+
+    <!-- Noise overlay -->
+    <filter id="noiseFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="multiply"/>
+    </filter>
+
+    <!-- Shimmer gradient -->
+    <linearGradient id="shimmerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="white" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="white" stop-opacity="0.1" />
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="2s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- DK shimmer mask -->
+    <mask id="dkShimmerMask">
+      <text x="50%" y="299" font-size="120" font-weight="bold" text-anchor="middle"
+            font-family="Georgia, serif" fill="white">
+        DK
+      </text>
+    </mask>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGradient)" filter="url(#noiseFilter)" />
+
+  <!-- Sparkles -->
+  <g opacity="0.9">
+    <path d="M256 170 L260 195 L285 200 L260 205 L256 230 L252 205 L227 200 L252 195 Z" fill="white"/>
+    <path d="M320 250 L322 265 L335 270 L322 275 L320 290 L318 275 L305 270 L318 265 Z" fill="black"/>
+    <path d="M200 250 L202 262 L215 265 L202 268 L200 280 L198 268 L185 265 L198 262 Z" fill="black"/>
+  </g>
+
+  <!-- DK shimmering text using animated gradient mask -->
+  <rect x="0" y="130" width="512" height="160" fill="url(#shimmerGradient)" mask="url(#dkShimmerMask)" stroke="#ffffff" stroke-width="64"/>
+
+  <!-- Name text -->
+  <text x="50%" y="360" font-size="32" text-anchor="middle" fill="white" letter-spacing="2px" font-family="serif">
+    DIKSHA KHETAN
+  </text>
+</svg>
